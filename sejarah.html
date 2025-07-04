@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Kacirebonan</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="main.js" defer></script>
+
+    <link rel="icon" href="/image/icons/logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a class="no-underline" href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="#000000"
+            >
+              <path
+                d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="" class="logo no-underline">DIGITAL KACIREBONAN</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html">ABOUT</a></li>
+        <li><a class="gallery" href="index.html">GALLERY</a></li>
+        <li class="dropdown-toggle">
+          <a href="#"
+            >KEKAYAAN
+            <img src="/image/icons/arrow.svg" class="arrow-icon" alt="arrow" />
+          </a>
+          <ul class="dropdown">
+            <li><a href="#sejarah.html">SEJARAH</a></li>
+            <li><a href="senibudaya.html">SENI BUDAYA</a></li>
+            <li><a href="kuliner.html">KULINER</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="">Contact</a></li> -->
+      </ul>
+      <ul class="navbar">
+        <li>
+          <a style="color: #fff !important" href="index.html" class="logo no-underline">
+            <img src="image/icons/logo.png" alt="Logo" class="logo-icon" />
+            DIGITAL KACIREBONAN
+          </a>
+        </li>
+        <li class="hideOnMobile">
+          <a style="color: #fff !important" href="index.html">HOME</a>
+        </li>
+        <li class="hideOnMobile">
+          <a style="color: #fff !important" href="index.html">ABOUT</a>
+        </li>
+        <li class="hideOnMobile">
+          <a style="color: #fff !important" href="index.html">GALLERY</a>
+        </li>
+        <li class="hideOnMobile dropdown-toggle">
+          <a style="color: #fff !important" href="#"
+            >KEKAYAAN
+            <img src="/image/icons/arrow.svg" class="arrow-icon" alt="arrow" />
+          </a>
+          <ul class="dropdown">
+            <li><a href="sejarah.html">SEJARAH</a></li>
+            <li><a href="senibudaya.html">SENI BUDAYA</a></li>
+            <li class="nav-batik"><a href="kuliner.html">KULINER</a></li>
+          </ul>
+        </li>
+        <!-- <li class="hideOnMobile"><a href="">Contact</a></li> -->
+        <li class="menu-btn" onclick="showSidebar()">
+          <a class="no-underline" href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="#fff"
+            >
+              <path
+                d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="sejarah">
+      <!-- Bagian header dengan gambar -->
+      <div class="sejarah-header">
+        <h1>SEJARAH</h1>
+      </div>
+
+      <!-- Bagian konten teks -->
+      <div class="sejarah-content">
+        <h2>Asal Usul dan Pembentukan Awal (Abad ke-14 – Abad ke-15)</h2>
+        <p>
+          Cirebon mulanya adalah sebuah desa kecil nelayan yang dikenal dengan
+          nama Muara Jati, berada di pesisir utara Pulau Jawa. Nama “Cirebon”
+          berasal dari kata “Ci” (air) dan “Rebon” (udang kecil), karena wilayah
+          ini memang terkenal sebagai tempat produksi terasi dari udang rebon.
+          Pada masa itu, wilayah Cirebon berada di bawah kekuasaan Kerajaan
+          Sunda Pajajaran. Sekitar tahun 1415–1420 M, datang seorang ulama dari
+          Persia bernama Syekh Datuk Kahfi (Nurjati) dan menetap di Gunung Jati.
+          Beliau mengajarkan Islam kepada masyarakat setempat, dan salah satu
+          muridnya adalah Pangeran Walangsungsang, anak dari Prabu Siliwangi,
+          raja Pajajaran. Setelah memeluk Islam, Walangsungsang bersama adiknya
+          Nyi Mas Rara Santang mendirikan pemukiman baru di kawasan
+          Lemahwungkuk, yang kemudian menjadi cikal bakal Kota Cirebon. Pada
+          tahun 1445, Walangsungsang diangkat sebagai penguasa wilayah ini dan
+          bergelar Pangeran Cakrabuana, menjadikan Lemahwungkuk sebagai pusat
+          pemerintahan yang bercorak Islam.
+        </p>
+
+        <h2>Masa Kesultanan Islam Cirebon (1479–1677)</h2>
+        <p>
+          Tahun 1479 M, Pangeran Cakrabuana menyerahkan kekuasaan kepada
+          putranya, Syarif Hidayatullah, yang dikenal sebagai Sunan Gunung Jati,
+          salah satu dari Wali Songo. Ia kemudian mendirikan Kesultanan Cirebon
+          sebagai kerajaan Islam pertama di Jawa Barat. Di bawah
+          kepemimpinannya, Cirebon tumbuh sebagai pusat dakwah dan perdagangan
+          yang sangat penting di pesisir utara Jawa. Ia menjalin hubungan
+          diplomatik dan keagamaan dengan berbagai kerajaan Islam seperti Demak,
+          Banten, bahkan dengan kesultanan di Timur Tengah. Sunan Gunung Jati
+          juga menikah dengan putri Kesultanan Demak dan menjalin aliansi
+          politik dengan Kesultanan Banten, sehingga memperkuat posisi
+          Kesultanan Cirebon. Pada masa ini, Cirebon mengalami kemajuan pesat di
+          bidang agama, ekonomi, dan budaya. Selain sebagai pusat dakwah,
+          Cirebon juga menjadi pelabuhan penting dalam jalur perdagangan Asia.
+          Setelah wafatnya Sunan Gunung Jati (sekitar 1570-an), kekuasaan
+          dilanjutkan oleh para penerusnya yang kemudian mengalami persaingan
+          internal.
+        </p>
+
+        <h2>Pecahnya Kesultanan dan Campur Tangan VOC (1677–1800)</h2>
+        <p>
+          Memasuki abad ke-17, Kesultanan Cirebon menghadapi banyak tekanan baik
+          dari dalam maupun luar. Adanya konflik dinasti dan tekanan dari
+          Kesultanan Mataram serta VOC (Belanda) membuat Cirebon kehilangan
+          kedaulatannya secara bertahap. Pada tahun 1677, setelah kekalahan
+          Mataram dari Trunajaya, Kesultanan Cirebon mulai mengalami
+          disintegrasi. Puncaknya terjadi pada tahun 1679, saat Kesultanan
+          Cirebon pecah menjadi dua: Kesultanan Kasepuhan dan Kesultanan
+          Kanoman, yang kemudian diperparah dengan berdirinya Keraton
+          Kacirebonan (1807) dan Keraton Keprabonan. VOC memanfaatkan konflik
+          ini untuk memperkuat kendali politik dan ekonominya di Cirebon. Para
+          sultan akhirnya menjadi sekadar pemimpin simbolik yang berada di bawah
+          pengawasan ketat VOC. Pada masa ini pula, Cirebon dijadikan wilayah
+          administratif yang dikenal sebagai “Residentie Cheribon”.
+        </p>
+
+        <h2>Masa Kolonial Hindia Belanda (1800–1942)</h2>
+        <p>
+          Setelah VOC dibubarkan dan digantikan oleh pemerintahan Hindia
+          Belanda, Cirebon tetap menjadi daerah penting secara ekonomi.
+          Pelabuhan Cirebon digunakan untuk ekspor hasil bumi seperti tebu,
+          garam, jati, dan batik. Jalur kereta api pertama di Jawa Barat yang
+          menghubungkan Batavia–Cikampek–Cirebon dibangun pada tahun 1867, yang
+          mempercepat laju perdagangan dan industrialisasi di kawasan ini.
+          Pabrik-pabrik gula dan garam mulai bermunculan. Namun, kehidupan
+          masyarakat pribumi mengalami tekanan dan ketimpangan ekonomi akibat
+          sistem tanam paksa dan monopoli dagang kolonial. Meski demikian,
+          budaya dan adat istiadat keraton tetap dijaga oleh para sultan dan
+          masyarakat Cirebon, seperti tradisi Grebeg Syawal, seni tari topeng,
+          dan batik Mega Mendung yang menjadi identitas khas Cirebon.
+        </p>
+
+        <h2>Masa Pendudukan Jepang dan Proklamasi Kemerdekaan (1942–1949)</h2>
+        <p>
+          Ketika Jepang menduduki Indonesia (1942–1945), Cirebon berada dalam
+          pengawasan militer Jepang. Kehidupan ekonomi semakin sulit dan banyak
+          rakyat Cirebon yang mengalami penderitaan akibat kerja paksa
+          (romusha). Setelah Proklamasi Kemerdekaan 17 Agustus 1945, rakyat
+          Cirebon langsung mendukung Republik Indonesia. Namun Belanda kembali
+          datang dalam Agresi Militer I dan II, termasuk menjadikan Cirebon
+          sebagai medan pertempuran. Tokoh-tokoh seperti KH Abbas Buntet
+          Pesantren ikut terlibat dalam perlawanan rakyat terhadap Belanda.
+          Akhirnya, setelah pengakuan kedaulatan pada 27 Desember 1949, Cirebon
+          resmi menjadi bagian dari Republik Indonesia.
+        </p>
+
+        <h2>Cirebon Masa Kini (1950–Sekarang)</h2>
+        <p>
+          Setelah kemerdekaan, Cirebon berkembang menjadi salah satu kota
+          penting di Jawa Barat. Pada tahun 1999, Kota Cirebon dan Kabupaten
+          Cirebon resmi dipisah menjadi dua wilayah administratif berbeda. Kota
+          Cirebon lebih maju secara industri dan perdagangan, sedangkan
+          Kabupaten Cirebon berkembang dalam sektor pertanian dan perikanan.
+          Cirebon kini dikenal sebagai “Kota Wali dan Keraton”, menyimpan empat
+          keraton bersejarah: Kasepuhan, Kanoman, Kacirebonan, dan Keprabonan.
+          Kota ini juga terkenal sebagai pusat kuliner khas seperti empal
+          gentong, nasi jamblang, dan tahu gejrot. Di bidang seni dan budaya,
+          Cirebon melestarikan batik Mega Mendung, tari topeng, dan musik
+          tarling. Dalam 20 tahun terakhir, Cirebon berkembang pesat berkat
+          pembangunan infrastruktur nasional, seperti Tol Cipali dan rencana
+          pengembangan Bandara Internasional Kertajati. Cirebon menjadi simpul
+          ekonomi, budaya, dan agama di wilayah Pantura bagian barat.
+        </p>
+
+        <h2>Tokoh-Tokoh Penting dalam Sejarah Cirebon</h2>
+        <ul>
+          <li>
+            <span>Pangeran Walangsungsang (Pangeran Cakrabuana)</span> – Pendiri
+            pemerintahan Islam pertama di Cirebon.
+          </li>
+          <li>
+            <span>Nyi Mas Rara Santang</span> – Adik Walangsungsang, ibu dari
+            Sunan Gunung Jati.
+          </li>
+          <li>
+            <span>Sunan Gunung Jati (Syarif Hidayatullah)</span> – Pendiri
+            Kesultanan Cirebon dan anggota Wali Songo.
+          </li>
+          <li>
+            <span>Syekh Datuk Kahfi (Nurjati)</span> – Ulama penyebar Islam
+            pertama di wilayah Cirebon.
+          </li>
+          <li>
+            <span>KH Abbas Buntet</span> – Ulama dan pejuang dalam masa
+            perlawanan terhadap Belanda Ketika peristiwa 10 November di Surabaya.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer">
+      <div class="container footer_container">
+        <div class="footer_1">
+          <a href="index.html" class="footer_logo"
+            ><h4>DIGITAL KACIREBONAN</h4></a
+          >
+          <p>
+            Website ini dibuat untuk memperkenalkan kekayaan budaya Cirebon
+            secara modern, menggabungkan unsur visual, edukatif, dan interaktif
+            agar mudah dipahami dan dinikmati siapa pun.
+          </p>
+        </div>
+
+        <div class="footer_2">
+          <h4>Links</h4>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html">Gallery</a></li>
+            <li><a href="index.html">Kekayaan</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_3">
+          <h4>Primacy</h4>
+          <ul class="primacy">
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms and conditions</a></li>
+            <li><a href="">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_4">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href=""><img src="/image/icons/email.png">kikirifqi331@gmail.com</img></a></li>
+            <li><a href=""><img src="/image/icons/instagram.png">@ahmdrifqi16</img></a></li>
+            <li><a href=""><img src="/image/icons/facebook.png">ahmdrifqi16</img></a> </li>
+            <li><a href=""><img src="/image/icons/telephone-call.png">+62 8382 3713 ***</img></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_copyright">
+        <small
+          >Copyrigt &copy; Created by :
+          <a href="https://www.instagram.com/ahmdrifqi16/" target="_blank"
+            >❤ahmdrifqi16</a
+          >
+        </small>
+      </div>
+    </footer>
+  </body>
+</html>

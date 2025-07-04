@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Kacirebonan</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="main.js" defer></script>
+
+    <link rel="icon" href="/image/icons/logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a class="no-underline" href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="#000000"
+            >
+              <path
+                d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="" class="logo no-underline">DIGITAL KACIREBONAN</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html">ABOUT</a></li>
+        <li><a class="gallery" href="index.html">GALLERY</a></li>
+        <li class="dropdown-toggle">
+          <a href="#"
+            >KEKAYAAN
+            <img src="/image/icons/arrow.svg" class="arrow-icon" alt="arrow" />
+          </a>
+          <ul class="dropdown">
+            <li><a href="sejarah.html">SEJARAH</a></li>
+            <li><a href="senibudaya.html">SENI BUDAYA</a></li>
+            <li><a href="kuliner.html">KULINER</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="">Contact</a></li> -->
+      </ul>
+      <ul class="navbar">
+       <li>
+          <a href="index.html" class="logo no-underline">
+            <img src="image/icons/logo.png" alt="Logo" class="logo-icon" />
+            DIGITAL KACIREBONAN
+          </a>
+        </li>
+        <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+        <li class="hideOnMobile"><a href="index.html">ABOUT</a></li>
+        <li class="hideOnMobile"><a href="index.html">GALLERY</a></li>
+        <li class="hideOnMobile dropdown-toggle">
+          <a href="#"
+            >KEKAYAAN
+            <img src="/image/icons/arrow.svg" class="arrow-icon" alt="arrow" />
+          </a>
+          <ul class="dropdown">
+            <li><a href="sejarah.html">SEJARAH</a></li>
+            <li><a href="senibudaya.html">SENI BUDAYA</a></li>
+            <li class="nav-batik"><a href="kuliner.html">KULINER</a></li>
+          </ul>
+        </li>
+        <!-- <li class="hideOnMobile"><a href="">Contact</a></li> -->
+        <li class="menu-btn" onclick="showSidebar()">
+          <a class="no-underline" href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="currentColor"
+            >
+              <path
+                d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="senbud">
+      <h1 class="senbud-title">SENI BUDAYA CIREBON</h1>
+      <div class="senbud-content">
+        <div class="img-wrapper">
+          <img class="batik" src="/image/budaya/mega-mendung.png" alt="" />
+          <img
+          class="batik"
+          src="/image/budaya/Batik-Paksi-Naga-Liman.jpg"
+          alt=""
+          />
+        </div>
+        <h2>Batik Mega Mendung dan Paksinaga Liman</h2>
+        <p>
+          Batik Mega Mendung adalah batik khas Cirebon yang sangat terkenal
+          karena coraknya yang unik berupa pola awan bergelombang
+          berlapis-lapis. Motif ini terinspirasi dari bentuk awan mendung yang
+          melambangkan keteduhan, kesabaran, dan kesejukan hati. Biasanya, warna
+          dasar Mega Mendung dominan biru atau merah dengan gradasi tegas yang
+          mencolok. Corak ini mencerminkan akulturasi budaya Tionghoa yang
+          berpadu harmonis dengan tradisi lokal pesisir Cirebon. Karena
+          keindahan dan filosofinya, Batik Mega Mendung menjadi salah satu ikon
+          batik Indonesia yang mendunia. Paksi Naga Liman adalah kereta kencana
+          pusaka milik Keraton Kasepuhan Cirebon yang berbentuk sangat khas.
+          Kereta ini merupakan gabungan tiga makhluk mitologi: kepala burung
+          (paksi), badan naga, dan kaki gajah (liman), yang menyimbolkan
+          kekuatan spiritual, kebijaksanaan, dan kemuliaan raja. Paksi Naga
+          Liman dahulu digunakan Sunan Gunung Jati untuk perjalanan kerajaan dan
+          berbagai upacara kebesaran. Hingga kini, kereta pusaka ini masih
+          dirawat dan ditampilkan dalam upacara tradisi Grebeg Maulud setiap
+          tahun sebagai lambang kejayaan dan warisan budaya Keraton Cirebon.
+        </p>
+
+        <div class="img-wrapper">
+          <img class="topeng-img" src="/image/budaya/tari-topeng.jpg" alt="" />
+        </div>
+        <h2>Tari Topeng Cirebon</h2>
+
+        <p>
+          Tari Topeng Cirebon adalah seni tari tradisional khas Cirebon yang
+          ditampilkan dengan penari mengenakan topeng kayu berkarakter. Setiap
+          topeng mewakili watak manusia yang berbeda, seperti kelembutan,
+          kegembiraan, kewibawaan, hingga sifat angkara murka. Tarian ini tidak
+          hanya menghibur, tetapi juga menyampaikan pesan moral dan filosofi
+          kehidupan. Tari Topeng biasa ditampilkan dalam upacara adat,
+          penyambutan tamu agung, hingga pertunjukan budaya, dan menjadi salah
+          satu warisan budaya yang merefleksikan kekayaan seni dan nilai-nilai
+          lokal masyarakat Cirebon.
+        </p>
+
+        <div class="img-wrapper">
+          <img class="sintren-img" src="/image/budaya/tari-sintren.jpeg" alt="" />
+        </div>
+        <h2>Tari Sintren</h2>
+        <p>
+          Tari Sintren Cirebon adalah tarian tradisional yang sarat unsur magis
+          dan ritual. Tarian ini biasanya dibawakan oleh seorang gadis yang pada
+          awalnya ditutup matanya lalu dimasukkan ke dalam kurungan ayam.
+          Setelah mantra-mantra dibacakan oleh pawang, penari keluar dalam
+          keadaan berdandan lengkap dan menari dalam kondisi setengah sadar,
+          seakan dirasuki roh leluhur. Tari Sintren sering dipertunjukkan dalam
+          acara syukuran, hajatan, atau hiburan rakyat di pesisir Cirebon.
+          Gerakan tariannya lincah dan diiringi alunan musik gamelan serta
+          tembang-tembang khas yang menambah suasana mistis dan sakral.
+        </p>
+
+        <div class="img-wrapper">
+          <img class="trusmi-img" src="/image/budaya/gantiwalit-trusmi.jpg" alt="" />
+        </div>
+        <h2>Upacara Ganti Welit Buyut Trusmi</h2>
+        <p>
+          Upacara Ganti Welit Buyut Trusmi adalah tradisi adat masyarakat
+          Trusmi, Cirebon, yang dilakukan untuk mengganti atap daun rumbia
+          (*welit*) di Makam Buyut Trusmi, tokoh penyebar agama Islam dan
+          pelindung para perajin batik. Upacara ini dilaksanakan setiap beberapa
+          tahun sekali sebagai bentuk penghormatan, rasa syukur, dan memohon
+          berkah. Prosesi dimulai dengan pembersihan area makam, pembacaan
+          doa-doa, dan ritual penggantian welit secara gotong royong oleh
+          masyarakat sekitar. Selain menjadi peristiwa sakral, upacara ini juga
+          menjadi ajang silaturahmi dan pelestarian nilai-nilai budaya leluhur
+          yang diwariskan turun-temurun di Desa Trusmi.
+        </p>
+
+        <div class="img-wrapper">
+          <img class="jimat-img" src="/image/budaya/panjang-jimat.jpeg" alt="" />
+        </div>
+        <h2>Panjang Jimat</h2>
+        <p>
+          Panjang Jimat adalah upacara adat tahunan yang dilaksanakan di Keraton
+          Cirebon untuk memperingati Maulid Nabi Muhammad SAW. Tradisi ini
+          diawali dengan prosesi arak-arakan benda pusaka keraton, seperti
+          jimat, tombak, dan berbagai perlengkapan kerajaan, yang dibawa dari
+          keraton menuju Masjid Agung Sang Cipta Rasa. Setelah itu, diadakan
+          pembacaan doa, sholawat, serta tahlil bersama sebagai wujud syukur dan
+          penghormatan kepada leluhur dan Nabi Muhammad. Panjang Jimat tidak
+          hanya menjadi ritual keagamaan, tetapi juga menjadi daya tarik wisata
+          budaya yang sarat nilai sejarah dan spiritual, serta memperkuat ikatan
+          sosial masyarakat Cirebon.
+        </p>
+
+        <div class="img-wrapper">
+          <img class="wayang-img" src="/image/budaya/Wayang-Kulit-Cirebon.jpeg" alt="" />
+        </div>
+        <h2>Wayang Kulit Cirebon</h2>
+        <p>
+          Wayang Kulit Cirebon adalah seni pertunjukan tradisional khas Cirebon
+          yang menggunakan boneka kulit sebagai media penceritaan, dimainkan
+          oleh seorang dalang dengan iringan gamelan. Berbeda dengan wayang
+          kulit Jawa Tengah, Wayang Kulit Cirebon memiliki gaya bahasa, musik,
+          dan bentuk tokoh wayang yang khas, serta sering menampilkan
+          cerita-cerita lokal selain kisah Mahabharata dan Ramayana. Pementasan
+          wayang ini tidak hanya berfungsi sebagai hiburan, tetapi juga sebagai
+          media dakwah, pendidikan moral, dan pelestarian nilai-nilai budaya
+          Cirebon yang kaya akan filosofi kehidupan.
+        </p>
+
+        <div class="img-wrapper">
+          <img class="bedaya-img" src="/image/budaya/Tari Bedaya Rimba.jpeg" alt="" />
+        </div>
+        <h2>Tari Bedaya Rimba</h2>
+        <p>
+          Tari Bedaya Rimba adalah tarian tradisional khas Cirebon yang
+          menggambarkan kehidupan dan suasana di tengah hutan atau rimba.
+          Gerakannya lembut dan anggun, mencerminkan keharmonisan manusia dengan
+          alam sekitar. Tari ini biasanya dibawakan oleh beberapa penari wanita
+          yang mengenakan busana adat berwarna hijau dan ornamen dedaunan,
+          melambangkan kesuburan serta kesejukan alam. Selain sebagai hiburan,
+          Tari Bedaya Rimba juga memiliki makna simbolis tentang pentingnya
+          menjaga kelestarian lingkungan, dan sering dipertunjukkan dalam acara
+          adat atau penyambutan tamu kehormatan di Cirebon.
+        </p>
+
+        <div class="img-wrapper">
+          <img class="nadran-img" src="/image/budaya/Sededkah laut Nadran.png" alt="" />
+        </div>
+        <h2>Sedekah Laut (Nadran)</h2>
+        <p>
+          Sedekah Laut (Nadran) Cirebon adalah tradisi adat nelayan pesisir
+          utara Cirebon yang digelar setahun sekali sebagai bentuk syukur atas
+          limpahan ikan dan hasil laut serta permohonan keselamatan di laut.
+          Dalam prosesi dimulai dengan arak-arakan perahu hias yang membawa
+          sesajen seperti kepala kerbau atau kambing, hasil bumi, dan miniatur
+          kapal, diiringi doa, drumband, barongsai, hingga musik tradisional.
+          Kemudian sesaji tersebut dilarung ke tengah laut, menandakan
+          penghormatan kepada alam dan Sang Kuasa. Upacara ini tidak hanya
+          spiritual, tetapi juga memperkuat solidaritas sosial masyarakat
+          pesisir dan menarik perhatian wisatawan, dengan campuran ritual sakral
+          dan hiburan kerakyatan seperti wayang, dangdut, atau tarling .
+        </p>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer">
+      <div class="container footer_container">
+        <div class="footer_1">
+          <a href="index.html" class="footer_logo"
+            ><h4>DIGITAL KACIREBONAN</h4></a
+          >
+          <p>
+            Website ini dibuat untuk memperkenalkan kekayaan budaya Cirebon
+            secara modern, menggabungkan unsur visual, edukatif, dan interaktif
+            agar mudah dipahami dan dinikmati siapa pun.
+          </p>
+        </div>
+
+        <div class="footer_2">
+          <h4>Links</h4>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html">Gallery</a></li>
+            <li><a href="index.html">Kekayaan</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_3">
+          <h4>Primacy</h4>
+          <ul class="primacy">
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms and conditions</a></li>
+            <li><a href="">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_4">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href=""><img src="/image/icons/email.png">kikirifqi331@gmail.com</img></a></li>
+            <li><a href=""><img src="/image/icons/instagram.png">@ahmdrifqi16</img></a></li>
+            <li><a href=""><img src="/image/icons/facebook.png">ahmdrifqi16</img></a> </li>
+            <li><a href=""><img src="/image/icons/telephone-call.png">+62 8382 3713 ***</img></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_copyright">
+        <small
+          >Copyrigt &copy; Created by :
+          <a href="https://www.instagram.com/ahmdrifqi16/" target="_blank"
+            >❤ahmdrifqi16</a
+          >
+        </small>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Kacirebonan</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="main.js" defer></script>
+
+    <link rel="icon" href="/image/icons/logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a class="no-underline" href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="#000000"
+            >
+              <path
+                d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="" class="logo no-underline">DIGITAL KACIREBONAN</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html">ABOUT</a></li>
+        <li><a class="gallery" href="index.html">GALLERY</a></li>
+        <li class="dropdown-toggle">
+          <a href="#"
+            >KEKAYAAN
+            <img src="/image/icons/arrow.svg" class="arrow-icon" alt="arrow" />
+          </a>
+          <ul class="dropdown">
+            <li><a href="sejarah.html">SEJARAH</a></li>
+            <li><a href="senibudaya.html">SENI BUDAYA</a></li>
+            <li><a href="kuliner.html">KULINER</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="">Contact</a></li> -->
+      </ul>
+      <ul class="navbar">
+        <li>
+          <a href="index.html" class="logo no-underline">
+            <img src="image/icons/logo.png" alt="Logo" class="logo-icon" />
+            DIGITAL KACIREBONAN
+          </a>
+        </li>
+        <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+        <li class="hideOnMobile"><a href="index.html">ABOUT</a></li>
+        <li class="hideOnMobile"><a href="index.html">GALLERY</a></li>
+        <li class="hideOnMobile dropdown-toggle">
+          <a href="#"
+            >KEKAYAAN
+            <img src="/image/icons/arrow.svg" class="arrow-icon" alt="arrow" />
+          </a>
+          <ul class="dropdown">
+            <li><a href="sejarah.html">SEJARAH</a></li>
+            <li><a href="senibudaya.html">SENI BUDAYA</a></li>
+            <li class="nav-batik"><a href="kuliner.html">KULINER</a></li>
+          </ul>
+        </li>
+        <!-- <li class="hideOnMobile"><a href="">Contact</a></li> -->
+        <li class="menu-btn" onclick="showSidebar()">
+          <a class="no-underline" href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="currentColor"
+            >
+              <path
+                d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="kuliner-section">
+      <h1 class="kuliner-title">Kuliner Khas Cirebon</h1>
+      <div class="kuliner-grid">
+        <div class="kuliner-card">
+          <img src="/image/kuliner/empal-gentong.png" alt="Empal Gentong" />
+          <div class="card-content">
+            <h3>Empal Gentong</h3>
+            <p>
+              Empal Gentong adalah masakan khas Cirebon berbahan dasar daging
+              sapi dengan kuah santan.
+            </p>
+          </div>
+        </div>
+        <div class="kuliner-card">
+          <img src="/image/kuliner/nasi-jamblang.png" alt="Nasi Jamblang" />
+          <div class="card-content">
+            <h3>Nasi Jamblang</h3>
+            <p>Nasi dibungkus daun jati dengan aneka lauk khas Cirebon.</p>
+          </div>
+        </div>
+        <div class="kuliner-card">
+          <img src="/image/kuliner/nasi-lengko.png" alt="Nasi Lengko" />
+          <div class="card-content">
+            <h3>Nasi Lengko</h3>
+            <p>Nasi sehat dengan tahu, tempe, tauge, dan bumbu kacang.</p>
+          </div>
+        </div>
+        <div class="kuliner-card">
+          <img src="/image/kuliner/tahu-gejrot.png" alt="Tahu Gejrot" />
+          <div class="card-content">
+            <h3>Tahu Gejrot</h3>
+            <p>Tahu goreng dengan kuah pedas manis khas Cirebon.</p>
+          </div>
+        </div>
+        <div class="kuliner-card">
+          <img src="/image/kuliner/docang.png" alt="Docang" />
+          <div class="card-content">
+            <h3>Docang</h3>
+            <p>
+              Nirisan lontong, daun singkong, taoge, dan kerupuk yang disiram
+              dengan kuah dage (oncom) dan parutan kelapa.
+            </p>
+          </div>
+        </div>
+        <div class="kuliner-card">
+          <img src="/image/kuliner/mie-koclok.png" alt="Mie Koclok" />
+          <div class="card-content">
+            <h3>Mie Koclok</h3>
+            <p>
+              kuah kental berwarna putih seperti bubur, terbuat dari kaldu ayam
+              dan santan yang dikentalkan dengan tepung
+            </p>
+          </div>
+        </div>
+        <div class="kuliner-card">
+          <img src="/image/kuliner/krupuk-mlarat.png" alt="Krupuk Mlarat" />
+          <div class="card-content">
+            <h3>Krupuk Mlarat</h3>
+            <p>
+              makanan ringan khas Cirebon yang unik karena digoreng tanpa
+              minyak, melainkan menggunakan pasir
+            </p>
+          </div>
+        </div>
+        <div class="kuliner-card">
+          <img src="/image/kuliner/sate-kalong.png" alt="Sate Kalong" />
+          <div class="card-content">
+            <h3>Sate Kalong</h3>
+            <p>
+              eskipun namanya mengandung kata "kalong" (kelelawar), sate ini
+              sebenarnya terbuat dari daging kerbau, bukan daging kelelawar
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer">
+      <div class="container footer_container">
+        <div class="footer_1">
+          <a href="index.html" class="footer_logo"
+            ><h4>DIGITAL KACIREBONAN</h4></a
+          >
+          <p>
+            Website ini dibuat untuk memperkenalkan kekayaan budaya Cirebon
+            secara modern, menggabungkan unsur visual, edukatif, dan interaktif
+            agar mudah dipahami dan dinikmati siapa pun.
+          </p>
+        </div>
+
+        <div class="footer_2">
+          <h4>Links</h4>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html">Gallery</a></li>
+            <li><a href="index.html">Kekayaan</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_3">
+          <h4>Primacy</h4>
+          <ul class="primacy">
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms and conditions</a></li>
+            <li><a href="">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_4">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href=""><img src="/image/icons/email.png">kikirifqi331@gmail.com</img></a></li>
+            <li><a href=""><img src="/image/icons/instagram.png">@ahmdrifqi16</img></a></li>
+            <li><a href=""><img src="/image/icons/facebook.png">ahmdrifqi16</img></a> </li>
+            <li><a href=""><img src="/image/icons/telephone-call.png">+62 8382 3713 ***</img></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_copyright">
+        <small
+          >Copyrigt &copy; Created by :
+          <a href="https://www.instagram.com/ahmdrifqi16/" target="_blank"
+            >❤ahmdrifqi16</a
+          >
+        </small>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,966 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ==================== Navbar ==================== */
+nav {
+  /* background-color: white; */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.navbar li a {
+  color: #000;
+}
+
+.navbar li a:hover {
+  font-weight: bold;
+  transition: 0.5;
+}
+.navbar .nav-kuliner a:hover {
+  font-size: 15px;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #1f2937;
+}
+
+.logo-icon {
+  width: 48px;
+  margin-right: 8px;
+  object-fit: contain;
+}
+
+/* Style saat di scroll */
+nav.scrolled {
+  background-color: #4285f4;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav.scrolled .navbar .menu-btn svg {
+  transform: scale(1.1);
+}
+
+nav.scrolled .navbar li a {
+  color: #ffffff;
+}
+
+nav.scrolled .arrow-icon {
+  filter: brightness(0) invert(1);
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+/* ==================== DROPDOWN menu ==================== */
+
+.dropdown-toggle {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  top: 100%;
+  left: 0;
+  min-width: 185px;
+  min-height: 160px;
+  border-radius: 0 0 0 20%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+nav.scrolled .navbar .dropdown li a {
+  color: #000;
+}
+
+.dropdown li a {
+  padding: 10px 20px;
+  display: block;
+  color: #000;
+}
+
+.navbar .dropdown-toggle:hover .dropdown {
+  display: block;
+}
+
+/* Sidebar dropdown – visible all the time (for mobile) */
+.sidebar .dropdown-toggle .dropdown {
+  display: block;
+  background-color: transparent;
+  box-shadow: none;
+  position: static;
+  padding-left: 20px;
+}
+
+/* Panah dropdown */
+.arrow-icon {
+  width: 14px;
+  height: 14px;
+  margin-left: 6px;
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease;
+}
+
+/* Efek rotasi panah saat hover */
+.navbar .dropdown-toggle:hover .arrow-icon {
+  transform: rotate(90deg);
+}
+
+/* ==================== Sidebar ==================== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  color: #000;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.sidebar .logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* ================= ANIMASI UNDERLINE =================== */
+.navbar li a:not(.no-underline),
+.sidebar li a:not(.no-underline) {
+  position: relative;
+  /* display: inline-block; */
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:not(.no-underline)::after,
+.sidebar li a:not(.no-underline)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background-color: #2563eb;
+  transition: width 0.3s ease;
+}
+
+.navbar li a:not(.no-underline):hover::after,
+.sidebar li a:not(.no-underline):hover::after {
+  width: 100%;
+}
+
+/* ==================== Section Home ==================== */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 50px 50px; /* padding atas lebih besar krn navbar fixed */
+  min-height: 100vh;
+  gap: 40px;
+  background-color: #f6f6f6;
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.home-left {
+  flex: 1;
+}
+
+.home-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  /* color: 	#111827; */
+}
+
+.home-left p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* ==================== Home button  ==================== */
+
+button {
+  position: relative;
+  padding: 12px 35px;
+  background: #0099ff;
+  font-size: 17px;
+  font-weight: bold;
+  color: #181818;
+  border: 3px solid #0077ff;
+  border-radius: 15px;
+  box-shadow: 0 0 0 #fec1958c;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.star-1 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #d4af37);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+.star-2 {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #d4af37);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-3 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #d4af37);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-4 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #d4af37);
+  z-index: -5;
+  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-5 {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #d4af37);
+  z-index: -5;
+  transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-6 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #d4af37);
+  z-index: -5;
+  transition: all 0.8s ease;
+}
+
+button:hover {
+  background: transparent;
+  color: #962f00;
+  box-shadow: 0 0 25px #fec1958c;
+}
+
+button:hover .star-1 {
+  position: absolute;
+  top: -80%;
+  left: -30%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #d4af37);
+  z-index: 2;
+}
+
+button:hover .star-2 {
+  position: absolute;
+  top: -25%;
+  left: 10%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #d4af37);
+  z-index: 2;
+}
+
+button:hover .star-3 {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #d4af37);
+  z-index: 2;
+}
+
+button:hover .stars {
+  display: block;
+  filter: drop-shadow(0 0 10px #d4af37);
+}
+
+button:hover .star-4 {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #d4af37);
+  z-index: 2;
+}
+
+button:hover .star-5 {
+  position: absolute;
+  top: 25%;
+  left: 115%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #d4af37);
+  z-index: 2;
+}
+
+button:hover .star-6 {
+  position: absolute;
+  top: 5%;
+  left: 60%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #d4af37);
+  z-index: 2;
+}
+
+.fil0 {
+  fill: #d4af37;
+}
+
+.home-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.home-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* ==================== Section About ==================== */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 100vh;
+  padding: 0px 40px;
+  background-color: #ffffff;
+  /* background-color: #0077ff; */
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-image img {
+  width: 100%;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #000;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+/* ==================== Section Gallery ==================== */
+.container-gallery {
+  background-color: #f6f6f6;
+  position: relative;
+  padding-top: 30px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.slider {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ccc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Gambar besar */
+.big-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  transition: background 0.5s ease;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.big-slide.fade-out {
+  opacity: 0;
+}
+
+/* Teks di gambar besar */
+.slide-content {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: white;
+  max-width: 300px;
+}
+.slide-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 5px black;
+}
+.slide-content p {
+  font-size: 1rem;
+  line-height: 1.4;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* Thumbnails di sebelah kanan */
+/* Thumbnails container scrollable */
+.thumbnails {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: calc(100% - 40px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  padding-right: 5px;
+  scroll-behavior: smooth;
+}
+
+/* Style scrollbar agar lebih halus */
+.thumbnails::-webkit-scrollbar {
+  width: 6px;
+}
+.thumbnails::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.thumb {
+  flex: 0 0 auto;
+  width: 100px;
+  height: 140px;
+  background-image: var(--img);
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, outline 0.3s;
+}
+.thumb:hover {
+  transform: scale(1.05);
+}
+
+.thumb.active {
+  outline: 3px solid #ffffff;
+  transform: scale(1.1);
+  transition: outline 0.3s ease, transform 0.3s ease;
+}
+
+/* Navigasi panah */
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+.nav {
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.nav:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* ==================== Section Kuliner & Batik ==================== */
+.kuliner-section {
+  padding: 40px;
+  background-color: #f6f6f6;
+  padding-top: 80px;
+}
+
+.kuliner-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.kuliner-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.kuliner-card {
+  background: white;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+.kuliner-card:hover {
+  transform: translateY(-5px);
+}
+
+.kuliner-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ==================== Section Sejarah | sejarah.html ==================== */
+.sejarah {
+  width: 100%;
+}
+
+.sejarah-header {
+  background: url("/image/img/peta\ indonesia.jpg") no-repeat center
+    center/cover;
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.sejarah-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.sejarah-header h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.sejarah-content {
+  padding: 80px 50px;
+  margin: 0 auto;
+}
+
+.sejarah-content h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.sejarah-content p {
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 2;
+  font-size: 18px;
+}
+
+.sejarah-content ul {
+  padding-left: 30px;
+}
+
+.sejarah-content li {
+  line-height: 2;
+  font-size: 18px;
+  list-style: disc;
+}
+
+.sejarah-content li span {
+  font-weight: bold;
+}
+
+/* ==================== Section Seni Budaya | senibudaya.html ==================== */
+.senbud {
+  width: 100%;
+  padding-top: 80px;
+}
+.senbud-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  padding-top: 25px;
+}
+
+.senbud-content {
+  padding: 10px 50px;
+  margin: 0 auto;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.img-wrapper img {
+  border-radius: 15px;
+}
+
+.img-wrapper img:hover {
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+
+.img-wrapper .batik {
+  width: 400px;
+}
+.img-wrapper .topeng-img {
+  width: 700px;
+}
+.img-wrapper .trusmi-img {
+  width: 700px;
+}
+.img-wrapper .jimat-img {
+  width: 700px;
+}
+.img-wrapper .wayang-img {
+  width: 700px;
+}
+.img-wrapper .bedaya-img {
+  width: 700px;
+}
+.img-wrapper .nadran-img {
+  width: 700px;
+}
+
+.senbud-content h2 {
+  padding-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.senbud-content p {
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 2;
+  font-size: 18px;
+}
+.senbud-content ul {
+  padding-left: 30px;
+}
+.senbud-content li {
+  line-height: 2;
+  font-size: 18px;
+  list-style: disc;
+}
+.senbud-content li span {
+  font-weight: bold;
+}
+
+/* ==================== Footer ==================== */
+footer {
+  background: #4285f4;
+  /* padding-top: 5rem; */
+  font-size: 0.9rem;
+  color: #000;
+  text-decoration: none;
+  box-shadow: 0 -7px 80px rgba(0, 0, 0, 0.5);
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  padding: 50px 50px 0;
+}
+
+.footer_container > div h4 {
+  margin-bottom: 1.2rem;
+  font-size: 20px;
+  color: #000;
+}
+
+footer ul li {
+  margin-bottom: 0.7rem;
+  text-decoration: none;
+  color: #000;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+  color: #000;
+  font-weight: bold;
+}
+.footer_1 p {
+  margin: 0 0 2rem;
+}
+
+.footer_4 img {
+  margin: 3px;
+  width: 15px;
+}
+
+.footer_4 a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer_copyright {
+  text-align: center;
+  padding: 1.2rem 0;
+  border-top: 1px solid #111827;
+}
+
+/* ==================== Laptop ==================== */
+@media (max-width: 1366px) {
+}
+
+/* ==================== Tablets ==================== */
+@media (max-width: 834px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+
+  .home-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 20px 50px;
+  }
+  .home-right {
+    margin-top: 20px;
+  }
+  .home-right img {
+    width: 600px;
+    height: auto;
+  }
+
+  .about-section {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    height: 1100px;
+    gap: 0;
+    /* background-color: ; */
+  }
+  .about-image {
+    margin-top: -100px;
+  }
+
+  .about-text {
+    margin-top: -310px;
+  }
+
+  .slider {
+    height: 600px;
+  }
+
+  .kuliner-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img-wrapper .batik {
+    width: 300px;
+  }
+}
+
+/* ==================== Phone ==================== */
+@media (max-width: 450px) {
+  nav .navbar .logo {
+    font-size: medium;
+  }
+
+  .thumbnails {
+    display: none;
+  }
+  .navigation {
+    bottom: 30px;
+    right: 30px;
+    left: auto;
+    transform: none;
+  }
+  .about-section {
+    height: 1050px;
+    padding: 10px 30px;
+    gap: 1px;
+  }
+  .about-text {
+    margin-top: -210px;
+  }
+
+  .kuliner-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sejarah-content {
+    padding: 15px 30px;
+  }
+
+  .senbud-content {
+    padding: 15px 30px;
+    justify-content: center;
+  }
+  .img-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .img-wrapper .batik {
+    width: 340px;
+  }
+  .img-wrapper .topeng-img {
+    width: 340px;
+  }
+  .img-wrapper .trusmi-img {
+    width: 340px;
+  }
+  .img-wrapper .jimat-img {
+    width: 340px;
+  }
+  .img-wrapper .wayang-img {
+    width: 340px;
+  }
+  .img-wrapper .bedaya-img {
+    width: 340px;
+  }
+  .img-wrapper .nadran-img {
+    width: 340px;
+  }
+
+  .footer_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 50px 50px 0;
+  }
+}
