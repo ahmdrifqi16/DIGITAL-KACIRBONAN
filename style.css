@@ -261,6 +261,10 @@ button {
   cursor: pointer;
 }
 
+button a{
+  color: #000;
+}
+
 .star-1 {
   position: absolute;
   top: 20%;
